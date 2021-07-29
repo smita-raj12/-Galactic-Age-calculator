@@ -5,14 +5,14 @@ describe('Person', () => {
   let ageCalculator;
 
   beforeEach(() =>  {
-    ageCalculator = new Person(35,5,60,"vegitairen",2,80);
+    ageCalculator = new Person(35,5,60,"Vegetarian",2,80);
   });
   
   test('should create a constructor with propreties ', () => {
     expect(ageCalculator.earthAge).toEqual(35);
     expect(ageCalculator.heigth).toEqual(5);
     expect(ageCalculator.weigth).toEqual(60);
-    expect(ageCalculator.foodDiet).toEqual("vegitairen");
+    expect(ageCalculator.foodDiet).toEqual("Vegetarian");
     expect(ageCalculator.drink).toEqual(2);
     expect(ageCalculator.expectancy).toEqual(80);
   });
@@ -53,7 +53,7 @@ describe('Person', () => {
     expect(ageCalculator.lifeLeftOnMars()).toEqual(22);
   });
 
-  test('should return life left on mars ', () => {
+  test('should return life left on jupiter ', () => {
     expect(ageCalculator.lifeLeftOnJupiter()).toEqual(4);
   });
 });  
