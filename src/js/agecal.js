@@ -1,26 +1,45 @@
-export default class Age{
-  constructor(age){
-    this.age = age; 
+export default class Person{
+  constructor(earthAge,heigth,weigth,foodDiet,drink,expectancy){
+    this.earthAge = earthAge; 
+    this.heigth = heigth;
+    this.weigth = weigth;
+    this.foodDiet = foodDiet;
+    this.drink = drink;
+    this.expectancy = expectancy; 
   }
 
-  mercuryyears(){
-    this.age = Math.trunc(this.age/ 0.24);
-    return this.age;
+  mercuryYears(){
+    this.earthAge = Math.trunc(this.earthAge/ 0.24);
+    return this.earthAge;
   }
   
   venusYears(){
-    this.age = Math.trunc(this.age/ 0.62);
-    return this.age;
+    this.earthAge = Math.trunc(this.earthAge/ 0.62);
+    return this.earthAge;
   }
 
-  marsyears(){
-    this.age = Math.trunc(this.age/ 1.88);
-    return this.age;
+  marsYears(){
+    this.earthAge = Math.trunc(this.earthAge/ 1.88);
+    return this.earthAge;
   }
 
-  jupiteryears(){
-    this.age = Math.trunc(this.age/ 11.86);
-    return this.age;
+  jupiterYears(){
+    this.earthAge = Math.trunc(this.earthAge/ 11.86);
+    return this.earthAge;
+  }
+
+  lifeExpectancy(){
+    if(this.heigth >= 5 && this.weigth <= 55 && foodDiet ==="vegitairen"){
+      this.expectancy = this.expectancy + 2;    
+    } else{
+      this.expectancy = this.expectancy - 2;
+    }
+    if(this.drink <=2){
+      this.expectancy = this.expectancy - 1;
+    }else{
+      this.expectancy = this.expectancy - 2;
+    }
+    return this.expectancy;
   }
 
 }
