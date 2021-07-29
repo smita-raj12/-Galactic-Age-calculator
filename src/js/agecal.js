@@ -56,8 +56,23 @@ export default class Person{
   lifeLeftOnMercury(){
     this.lifeExpectancy();
     if(this.expectancy >= this.earthAge){
-      return this.mercuryLifeExpectancy()-this.mercuryYears();
+      const lifeLeftMercury = this.mercuryLifeExpectancy();
+      const mercuryAge= this.mercuryYears()
+      return lifeLeftMercury-mercuryAge;
     }
   }
-  
+
+  venusLifeExpectancy(){
+    return Math.trunc(this.expectancy / 0.62);
+  }
+
+  lifeLeftOnVenus(){
+    this.lifeExpectancy();
+    if(this.expectancy >= this.earthAge){
+      const lifeLeftVenus = this.venusLifeExpectancy();
+      const venusAge= this.venusYears();
+      return lifeLeftVenus-venusAge;
+    }
+  }
+
 }
