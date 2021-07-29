@@ -41,5 +41,11 @@ export default class Person{
     }
     return this.expectancy;
   }
-
+  
+  lifeLeftOnEarth(){
+    this.lifeExpectancy();
+    if(this.expectancy >= this.earthAge){
+      return this.expectancy-this.earthAge;
+    }
+  }
 }
