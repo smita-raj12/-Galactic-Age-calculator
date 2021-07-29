@@ -12,4 +12,9 @@ export default class Age{
     this.age = Math.trunc(this.age/ 0.62);
     return this.age;
   }
+
+  marsyears(){
+    this.age = Math.trunc(this.age/ 1.88);
+    return this.age;
+  }
 }
