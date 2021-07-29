@@ -16,4 +16,9 @@ describe('Age', () => {
     const ageAcalculator = new Age(35);
     expect(ageAcalculator.marsyears()).toEqual(18);
   });
+
+  test('should correctly returns mars person age', () => {
+    const ageAcalculator = new Age(35);
+    expect(ageAcalculator.jupiteryears()).toEqual(2);
+  });
 });  

@@ -17,4 +17,10 @@ export default class Age{
     this.age = Math.trunc(this.age/ 1.88);
     return this.age;
   }
+
+  jupiteryears(){
+    this.age = Math.trunc(this.age/ 11.86);
+    return this.age;
+  }
+
 }
