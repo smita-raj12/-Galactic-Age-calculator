@@ -40,5 +40,8 @@ describe('Person', () => {
   test('should return life left on earth ', () => {
     expect(ageCalculator.lifeLeftOnEarth()).toEqual(42);
   });
-
+  
+  test('should return life left on mercury ', () => {
+    expect(ageCalculator.lifeLeftOnMercury()).toEqual(175);
+  });
 });  

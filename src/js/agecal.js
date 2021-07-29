@@ -41,11 +41,23 @@ export default class Person{
     }
     return this.expectancy;
   }
-  
+
   lifeLeftOnEarth(){
     this.lifeExpectancy();
     if(this.expectancy >= this.earthAge){
       return this.expectancy-this.earthAge;
     }
   }
+
+  mercuryLifeExpectancy(){
+    return Math.trunc(this.expectancy / .24);
+  }
+
+  lifeLeftOnMercury(){
+    this.lifeExpectancy();
+    if(this.expectancy >= this.earthAge){
+      return this.mercuryLifeExpectancy()-this.mercuryYears();
+    }
+  }
+  
 }
