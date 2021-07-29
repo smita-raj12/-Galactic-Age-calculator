@@ -75,4 +75,29 @@ export default class Person{
     }
   }
 
+  marsLifeExpectancy(){
+    return Math.trunc(this.expectancy / 1.88);
+  }
+
+  lifeLeftOnMars(){
+    this.lifeExpectancy();
+    if(this.expectancy >= this.earthAge){
+      const lifeLeftMars = this.marsLifeExpectancy();
+      const marsAge= this.marsYears();
+      return lifeLeftMars-marsAge;
+    }
+  }
+
+  jupiterLifeExpectancy(){
+    return Math.trunc(this.expectancy / 11.86);
+  }
+
+  lifeLeftOnJupiter(){
+    this.lifeExpectancy();
+    if(this.expectancy >= this.earthAge){
+      const lifeLeftJupiter = this.jupiterLifeExpectancy();
+      const jupiterAge= this.jupiterYears();
+      return lifeLeftJupiter-jupiterAge;
+    }
+  }
 }
