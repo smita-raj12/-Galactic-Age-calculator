@@ -1,8 +1,8 @@
 export default class Person{
-  constructor(earthAge,heigth,weigth,foodDiet,drink,expectancy){
+  constructor(earthAge,height,weight,foodDiet,drink,expectancy){
     this.earthAge = earthAge; 
-    this.heigth = heigth;
-    this.weigth = weigth;
+    this.height = height;
+    this.weight = weight;
     this.foodDiet = foodDiet;
     this.drink = drink;
     this.expectancy = expectancy; 
@@ -29,7 +29,7 @@ export default class Person{
   }
 
   lifeExpectancy(){
-    if(this.heigth >= 5 && this.weigth <= 55 && foodDiet ==="Vegetarian"){
+    if(this.height >= 5 && this.weight <= 55 && foodDiet ==="Vegetarian"){
       this.expectancy = this.expectancy + 2;    
     } else{
       this.expectancy = this.expectancy - 2;
