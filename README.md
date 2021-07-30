@@ -10,7 +10,7 @@ Smita
 
 ## Live Site:
 
-[https://smita-raj12.github.io/-Galactic-Age-calculator](https://smita-raj12.github.io/-Galactic-Age-calculator)
+[https://smita-raj12.github.io/Galactic-Age-calculator](https://smita-raj12.github.io/Galactic-Age-calculator)
 
 
 ## Description:
