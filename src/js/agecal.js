@@ -29,7 +29,7 @@ export default class Person{
   }
 
   lifeExpectancy(){
-    if(this.height >= 5 && this.weight <= 55 && this.foodDiet === "Vegetarian"){
+    if(this.height >= 5 && this.weight >= 55 && this.foodDiet === "Vegetarian"){
       this.expectancy = this.expectancy + 2;    
     } else{
       this.expectancy = this.expectancy - 2;
@@ -37,7 +37,7 @@ export default class Person{
     if(this.drink <=2){
       this.expectancy = this.expectancy - 1;
     }else{
-      this.expectancy = this.expectancy - 2;
+      this.expectancy = this.expectancy - 4;
     }
     return this.expectancy;
   }
@@ -46,9 +46,10 @@ export default class Person{
     this.lifeExpectancy();
     if(this.expectancy >= this.earthAge){
       return this.expectancy-this.earthAge;
+    }else{
+      return "no life left";
     }
   }
-
   mercuryLifeExpectancy(){
     return Math.trunc(this.expectancy / .24);
   }
@@ -58,7 +59,9 @@ export default class Person{
     if(this.expectancy >= this.earthAge){
       const lifeLeftMercury = this.mercuryLifeExpectancy();
       const mercuryAge= this.mercuryYears();
-      return lifeLeftMercury-mercuryAge;
+      return lifeLeftMercury - mercuryAge;
+    }else{
+      return "no life left";
     }
   }
 
@@ -72,6 +75,8 @@ export default class Person{
       const lifeLeftVenus = this.venusLifeExpectancy();
       const venusAge= this.venusYears();
       return lifeLeftVenus-venusAge;
+    }else{
+      return "no life left";
     }
   }
 
@@ -85,6 +90,8 @@ export default class Person{
       const lifeLeftMars = this.marsLifeExpectancy();
       const marsAge= this.marsYears();
       return lifeLeftMars-marsAge;
+    }else{
+      return "no life left";
     }
   }
 
@@ -98,6 +105,8 @@ export default class Person{
       const lifeLeftJupiter = this.jupiterLifeExpectancy();
       const jupiterAge= this.jupiterYears();
       return lifeLeftJupiter-jupiterAge;
+    }else{
+      return "no life left";
     }
   }
 }

@@ -25,8 +25,8 @@ $(document).ready(function(){
     let venusAgeLeft = personInfo.lifeLeftOnVenus();
     let marsAgeLeft = personInfo.lifeLeftOnMars();
     let jupiterAgeLeft = personInfo.lifeLeftOnJupiter();
-    console.log(earthAgeLeft);
-    console.log(mercuryAgeLeft);
+    
+    $("#earthage").text(inputedAge);
     $("#mercury").text(mercuryPersonAge);
     $("#venus").text(venusPersonAge);
     $("#mars").text(marsPersonAge);
