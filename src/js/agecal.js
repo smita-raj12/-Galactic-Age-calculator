@@ -29,7 +29,7 @@ export default class Person{
   }
 
   lifeExpectancy(){
-    if(this.height >= 5 && this.weight <= 55 && foodDiet ==="Vegetarian"){
+    if(this.height >= 5 && this.weight <= 55 && foodDiet === "Vegetarian"){
       this.expectancy = this.expectancy + 2;    
     } else{
       this.expectancy = this.expectancy - 2;

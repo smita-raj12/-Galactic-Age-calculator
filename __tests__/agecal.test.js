@@ -5,7 +5,7 @@ describe('Person', () => {
   let ageCalculator;
 
   beforeEach(() =>  {
-    ageCalculator = new Person(35,5,60,"Vegetarian",2,80);
+    ageCalculator = new Person(35, 5, 60,"Vegetarian", 2, 80);
   });
   
   test('should create a constructor with propreties ', () => {
