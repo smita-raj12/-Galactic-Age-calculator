@@ -10,8 +10,8 @@ describe('Person', () => {
   
   test('should create a constructor with propreties ', () => {
     expect(ageCalculator.earthAge).toEqual(35);
-    expect(ageCalculator.heigth).toEqual(5);
-    expect(ageCalculator.weigth).toEqual(60);
+    expect(ageCalculator.height).toEqual(5);
+    expect(ageCalculator.weight).toEqual(60);
     expect(ageCalculator.foodDiet).toEqual("Vegetarian");
     expect(ageCalculator.drink).toEqual(2);
     expect(ageCalculator.expectancy).toEqual(80);

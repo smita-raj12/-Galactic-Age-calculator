@@ -29,7 +29,7 @@ export default class Person{
   }
 
   lifeExpectancy(){
-    if(this.height >= 5 && this.weight <= 55 && foodDiet === "Vegetarian"){
+    if(this.height >= 5 && this.weight <= 55 && this.foodDiet === "Vegetarian"){
       this.expectancy = this.expectancy + 2;    
     } else{
       this.expectancy = this.expectancy - 2;
@@ -57,7 +57,7 @@ export default class Person{
     this.lifeExpectancy();
     if(this.expectancy >= this.earthAge){
       const lifeLeftMercury = this.mercuryLifeExpectancy();
-      const mercuryAge= this.mercuryYears()
+      const mercuryAge= this.mercuryYears();
       return lifeLeftMercury-mercuryAge;
     }
   }
