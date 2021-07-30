@@ -29,7 +29,7 @@ describe('Person', () => {
     expect(ageCalculator.marsYears()).toEqual(18);
   });
 
-  test('should correctly returns mars person age', () => {
+  test('should correctly returns jupiter person age', () => {
     expect(ageCalculator.jupiterYears()).toEqual(2);
   });
 
